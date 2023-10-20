@@ -1,0 +1,68 @@
+@layer base {
+  :root {
+    --made-with-panda: '🐼';
+    }
+
+  *, *::before, *::after, ::backdrop {
+    --blur:   ;
+    --brightness:   ;
+    --contrast:   ;
+    --grayscale:   ;
+    --hue-rotate:   ;
+    --invert:   ;
+    --saturate:   ;
+    --sepia:   ;
+    --drop-shadow:   ;
+    --backdrop-blur:   ;
+    --backdrop-brightness:   ;
+    --backdrop-contrast:   ;
+    --backdrop-grayscale:   ;
+    --backdrop-hue-rotate:   ;
+    --backdrop-invert:   ;
+    --backdrop-opacity:   ;
+    --backdrop-saturate:   ;
+    --backdrop-sepia:   ;
+    --scroll-snap-strictness: proximity;
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    }
+
+  * {
+    box-sizing: border-box;
+    margin: var(--spacing-0);
+    padding: var(--spacing-0);
+    }
+
+  html, body {
+    font-size: 18px;
+    font-family: var(--fonts-body);
+    color: var(--colors-text-primary);
+    background-color: var(--colors-background-primary);
+    }
+
+  ol, ul {
+    margin-left: 1rem;
+    }
+
+  li {
+    position: relative;
+    padding-left: 1rem;
+    }
+
+  li::before {
+    content: "•";
+    position: absolute;
+    left: var(--spacing-0);
+    }
+
+  em {
+    font-style: italic;
+    }
+}

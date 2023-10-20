@@ -1,0 +1,5 @@
+@layer utilities {
+  .bg_background\.accentAlt {
+    background-color: var(--colors-background-accent-alt)
+    }
+}
